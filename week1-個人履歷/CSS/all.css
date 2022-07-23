@@ -136,6 +136,8 @@ body{
 }
 
 .skills h2{
+  width: 996px;
+  margin: 0 auto 24px auto;
   color: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -194,5 +196,14 @@ body{
 }
 
 .social li{
+  display: inline-block;
   padding: 0 12px;
+}
+
+.social img{
+  transition: all 0.5s;
+}
+
+.social img:hover{
+  transform: translateY(-10px);
 }
