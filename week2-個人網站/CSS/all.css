@@ -111,7 +111,7 @@ a{
 }
 /* -----container---- */
 .container{
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -127,17 +127,21 @@ a{
 	margin: 0 8px;
  }
 
+.header-cont img{
+	transition: all 0.5s;
+	margin: 0 8px;
+}
+
+.header-cont img:hover{
+	transform: translateY(-10px);
+}
+
 /* ----about---- */
 .about{
 	padding: 56px 0;
-	flex-direction: column;
-	text-align: center;
 	align-items: center;
 }
 
-.about ul:last-child{
-	width: 384px;
-}
 
 .about ul:last-child li::before{
 	content: '';
@@ -167,12 +171,9 @@ a{
 /* ----works---- */
 .works{
 	padding: 56px 0 144px 0;
-	flex-direction: column;
-	align-items: center;
 }
 
 .works ul{
-	width: 1200px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	text-align: center;
