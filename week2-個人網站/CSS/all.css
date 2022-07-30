@@ -72,10 +72,10 @@ a{
 .mb-28{margin-bottom: 28px;}
 .mb-32{margin-bottom: 32px;}
 .mb-40{margin-bottom: 40px;}
+.mb-48{margin-bottom: 48px;}
 .mb-56{margin-bottom: 56px;}
 .mb-68{margin-bottom: 68px;}
 .mt-16{margin-top: 16px;}
-.mx-48{margin: 48px 0;}
 
 .bdt-00{border-top: 1px solid #000;}
 .title-1{
@@ -129,7 +129,6 @@ a{
 
 .header-cont img{
 	transition: all 0.5s;
-	margin: 0 8px;
 }
 
 .header-cont img:hover{
@@ -139,9 +138,13 @@ a{
 /* ----about---- */
 .about{
 	padding: 56px 0;
-	align-items: center;
 }
 
+.about ul:last-child{
+	width: 384px;
+	border-top: 1px solid #000;
+	margin: 0 auto;
+}
 
 .about ul:last-child li::before{
 	content: '';
@@ -174,7 +177,6 @@ a{
 }
 
 .works ul{
-	flex-wrap: wrap;
 	justify-content: space-between;
 	text-align: center;
 }
