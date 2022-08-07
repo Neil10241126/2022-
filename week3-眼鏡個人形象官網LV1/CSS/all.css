@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+*::before,*::after {
+  box-sizing: border-box;
+}
+/* ----CSS Reset end---- */
+
+/* ----Base---- */
+body{
+	line-height: 1.5;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.5s;
+	display: block;
+}
+
+.bg-primary{background: #AA0601;}
+.bg-secondary{background: #000;}
+
+.text-fff{color: #fff}
+
+.fz-14{font-size: 14px;}
+.fz-20{font-size: 20px;}
+.fz-36{font-size: 36px;}
+.fz-48{font-size: 48px;}
+
+.pt-48{padding-top: 48px;}
+.mb-8{margin-bottom: 8px;}
+.mb-24{margin-bottom: 24px;}
+.mb-32{margin-bottom: 32px;}
+.px-16{padding: 16px 0;}
+.px-32{padding: 32px 0;}
+.py-12{padding: 0 12px;}
+
+.ml-32{margin-left: 32px;}
+.ml-40{margin-left: 40px;}
+.ml-48{margin-left: 48px;}
+.mr-24{margin-right: 24px;}
+
+.d-flex{display: flex;}
+.flex-row-reverse{flex-direction: row-reverse;}
+.flex-column{flex-direction: column;}
+.justify-s-between{justify-content: space-between;}
+.justify-s-around{justify-content: space-around}
+.align-start{align-items: start;}
+.align-center{align-items: center;}
+
+/* ----container---- */
+
+.container{
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 12px;
+}
+
+/* ----header---- */
+
+.header{
+	margin-bottom: 10px;
+}
+
+.logo a{
+	background: url(../img/logo-white.png) no-repeat center;
+	background-size: contain;
+	width: 80px;
+	height: 49px;
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.navbar a:hover{
+	background: #fff;
+	color: #AA0601;
+	font-weight: 700;
+	border-radius: 5px;
+	transform: translateY(-5px);
+}
+
+
+@media(max-width: 768px){
+	
+	.container{
+		max-width: 768px;
+		padding: 0;
+	}
+
+	.header-cont{
+		flex-direction: column;
+	}
+	
+	.navbar{
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.navbar li{
+		width: 50%;
+		text-align: center;
+	}
+
+	.navbar a{
+		margin: 0;
+		padding: 12px 0;
+		border: 1px solid #fff;
+	}
+
+}
+
+/* ----footer---- */
+
+.message span{
+	font-size: 36px;
+	color: #fff;
+	margin-right: 22px;
+}
+
+.policy{
+	border-top: 1px solid #fff;
+}
+
+.menu a:hover{
+	background: #fff;
+	color: #AA0601;
+	font-weight: 700;
+	border-radius: 5px;
+	transform: translateY(-5px);
+}
+
+.icon a:hover,
+.message a:hover,
+.policy a:hover{
+	opacity: 0.6;
+}
+
+@media(max-width: 768px){
+
+	.footer{
+		padding: 24px 13px 0 13px;
+	}
+	
+	.footer-cont{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: start;
+		margin-bottom: 24px;
+	}
+	
+	.menu{
+		display: none;
+	}
+
+	.icon img{
+		margin-left: 8px;
+		width: 24px;
+	}
+	
+	.message a,
+	.policy a{
+		font-size: 16px;
+	}
+
+	.policy{
+		padding: 16px 0 24px 0;
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.policy ul{
+		flex-direction: column;
+	}
+
+	.policy a{
+		margin: 0;
+	}
+
+	.policy li:first-child{
+		margin: 8px 0;
+	}
+
+}
