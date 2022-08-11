@@ -61,8 +61,7 @@ img{
 /* ----Base---- */
 body{
 	line-height: 1.5;
-	font-family: 'Noto Sans TC', sans-serif;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', 'Noto Sans TC' sans-serif;
 }
 
 a{
@@ -215,6 +214,11 @@ a{
 		width: 24px;
 	}
 	
+	.message span{
+		font-size: 18px;
+		margin-right: 11px;
+	}
+
 	.message a,
 	.policy a{
 		font-size: 16px;
